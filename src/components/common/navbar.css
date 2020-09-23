@@ -1,0 +1,11 @@
+.item {
+    height: 40px;
+    box-sizing: border-box;
+}
+.item:hover {
+    border-bottom: 1px solid crimson;
+}
+
+.navbar-cus {
+    background-color: rgba(22, 33, 44, 0.5) !important;
+}
