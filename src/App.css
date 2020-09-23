@@ -1,0 +1,7 @@
+.App:lang('fa') {
+    font-family: 'Nazanin' !important;
+    font-size: large;
+}
+.App:lang('en') {
+    font-family: 'Roboto', sans-serif !important;
+}
