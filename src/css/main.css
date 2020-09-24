@@ -1,15 +1,7 @@
-.main {
+.jumbotron {
     min-height: 100vh;
     background-image: url('./../resource/image/back.jpg');
-    background-attachment: fixed;
     background-size: cover;
-}
-.dec {
-    background-color: transparent;
-    color: white;
-    min-height: calc(100vh - 56px);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 80px;
+    background-position: center;
+    background-attachment: fixed;
 }
