@@ -8,7 +8,7 @@ function App() {
     return (
         <div
             lang={cookie.get('lan') ? cookie.get('lan') : null}
-            className="App"
+            className="App "
         >
             <HomePage />
         </div>

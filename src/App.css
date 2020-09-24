@@ -4,4 +4,5 @@
 }
 .App:lang('en') {
     font-family: 'Roboto', sans-serif !important;
+    font-size: large;
 }

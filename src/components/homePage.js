@@ -5,7 +5,11 @@ import Jumbotron from './homePage/jumbotron';
 
 const HomePage = () => {
     return (
-        <div style={{ backgroundColor: 'black' }}>
+        <div
+            style={{
+                backgroundColor: 'black',
+            }}
+        >
             <Navabr />
             <Jumbotron />
         </div>
