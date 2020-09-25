@@ -10,27 +10,19 @@ const Navabr = () => {
     const [language, setLanguage] = useState({});
 
     const changeLang = () => {
-        if (cookie.get('lan') === 'fa') {
-            cookie.set('lan', 'en', {
-                path: '/',
-                expires: new Date(Date.now() + 31556952000),
-                sameSite: 'none',
-                secure: true,
-            });
+        var x = cookie.get('lan');
+        if (x === 'en') {
+            cookie.set('lan', 'fa');
         } else {
-            cookie.set('lan', 'fa', {
-                path: '/',
-                expires: new Date(Date.now() + 31556952000),
-                sameSite: 'none',
-                secure: true,
-            });
+            cookie.set('lan', 'en');
         }
-        window.location.reload();
     };
     useEffect(() => {
         if (!cookie.get('lan')) {
             cookie.set('lan', 'fa', {
                 path: '/',
+                secure: true,
+                sameSite: 'none',
                 expires: new Date(Date.now() + 31556952000),
             });
         }
@@ -98,7 +90,7 @@ const Navabr = () => {
                                 <a
                                     className="nav-link"
                                     href="/"
-                                    onClick={() => changeLang()}
+                                    onClick={(e) => changeLang(e)}
                                 >
                                     {language.navbar.lan}
                                 </a>

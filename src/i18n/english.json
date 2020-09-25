@@ -13,5 +13,10 @@
         "words": "born to be success",
         "statement": "The first thing for me was to see something before I reached it",
         "social": "Follow me on social network:"
+    },
+    "description": {
+        "title": "Description",
+        "desc": "A place to write the comments of a computer-loving human",
+        "statement": "While there is code, there is bug"
     }
 }
