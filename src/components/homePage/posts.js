@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getCookie } from './../../utils/cookie';
+
+import { langu } from './../../utils/languages';
 const Posts = () => {
-    return (
+    const [load, setLoad] = useState(false);
+    const [language, setLanguage] = useState({});
+    useEffect(() => {
+        let cookieName = getCookie();
+        let lang = langu(cookieName);
+        setLanguage(lang);
+        setLoad(true);
+    }, [load]);
+    return load === true ? (
         <div style={{ backgroundColor: '#0e0e0f' }} className="container-fluid">
             <hr
                 style={{
@@ -10,7 +21,7 @@ const Posts = () => {
                 }}
             />
             <h1 className="text-center text-white mt-5 ">
-                see more on my site
+                {language.linksmain.title}
             </h1>
             <div className="mt-5 text-center text-white row mx-1">
                 <div
@@ -22,11 +33,11 @@ const Posts = () => {
                         style={{ width: '100%' }}
                         className="image-fluid my-1"
                     />
-                    <p>resume</p>
+                    <p> {language.linksmain.resume_title}</p>
                     <hr style={{ backgroundColor: 'silver' }} />
-                    <p>ddddddddddddddddddddddddddd</p>
+                    <p>{language.linksmain.resume_body}</p>
                     <button className="btn btn-block bg-primary text-white">
-                        see
+                        {language.linksmain.resume_button}
                     </button>
                 </div>
                 <div
@@ -38,11 +49,11 @@ const Posts = () => {
                         style={{ width: '100%' }}
                         className="image-fluid my-1"
                     />
-                    <p>projects</p>
+                    <p>{language.linksmain.projects_title}</p>
                     <hr style={{ backgroundColor: 'silver' }} />
-                    <p>ssssssssssssssssssssssssss</p>
+                    <p>{language.linksmain.projects_body}</p>
                     <button className="btn btn-block bg-success text-white">
-                        ss
+                        {language.linksmain.projects_button}
                     </button>
                 </div>
                 <div
@@ -54,16 +65,16 @@ const Posts = () => {
                         style={{ width: '100%' }}
                         className="image-fluid my-1"
                     />
-                    <p>posts</p>
+                    <p>{language.linksmain.post_title}</p>
                     <hr style={{ backgroundColor: 'silver' }} />
-                    <p>ssssssssssssssssssssssssss</p>
-                    <button className="btn btn-block bg-warning text-white">
-                        ss
+                    <p>{language.linksmain.post_body}</p>
+                    <button className="btn btn-block bg-danger text-white">
+                        {language.linksmain.post_button}
                     </button>
                 </div>
             </div>
         </div>
-    );
+    ) : null;
 };
 
 export default Posts;

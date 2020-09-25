@@ -18,5 +18,22 @@
         "title": "Description",
         "desc": "A place to write the comments of a computer-loving human",
         "statement": "While there is code, there is bug"
+    },
+    "linksmain": {
+        "title": "see more on my site",
+        "resume_title": "resume",
+        "resume_body": "for see my resume clik on button",
+        "resume_button": "see",
+        "projects_title": "projects",
+        "projects_body": "for see my projects clik on button",
+        "projects_button": "see",
+        "post_title": "posts",
+        "post_body": "for see my posts clik on button",
+        "post_button": "see"
+    },
+    "notfound": {
+        "ops": "Opps!",
+        "text": "page not found",
+        "button": "back to home"
     }
 }
