@@ -35,5 +35,11 @@
         "ops": "Opps!",
         "text": "page not found",
         "button": "back to home"
+    },
+    "login": {
+        "title": "Login Form",
+        "email": "Email",
+        "password": "Password",
+        "submit": "submit"
     }
 }

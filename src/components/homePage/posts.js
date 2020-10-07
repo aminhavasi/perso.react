@@ -32,6 +32,7 @@ const Posts = () => {
                         src={require('./../../resource/image/documents.webp')}
                         style={{ width: '100%' }}
                         className="image-fluid my-1"
+                        alt="img-*"
                     />
                     <p> {language.linksmain.resume_title}</p>
                     <hr style={{ backgroundColor: 'silver' }} />
@@ -48,6 +49,7 @@ const Posts = () => {
                         src={require('./../../resource/image/js.jpg')}
                         style={{ width: '100%' }}
                         className="image-fluid my-1"
+                        alt="img-*"
                     />
                     <p>{language.linksmain.projects_title}</p>
                     <hr style={{ backgroundColor: 'silver' }} />
@@ -64,6 +66,7 @@ const Posts = () => {
                         src={require('./../../resource/image/type.jpg')}
                         style={{ width: '100%' }}
                         className="image-fluid my-1"
+                        alt="img-*"
                     />
                     <p>{language.linksmain.post_title}</p>
                     <hr style={{ backgroundColor: 'silver' }} />

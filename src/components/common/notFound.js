@@ -10,7 +10,7 @@ const NotFound = () => {
         let lang = langu(cookieName);
         setLanguage(lang);
         setLoad(true);
-    });
+    }, [load]);
     return (
         <React.Fragment>
             {load === true ? (
